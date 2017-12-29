@@ -18,7 +18,7 @@ html {
   .clock {
     width: 30rem;
     height: 30rem;
-    border:20px solid white;
+    border:20px solid rgb(13, 126, 170);
     border-radius:50%;
     margin:50px auto;
     position: relative;
@@ -43,4 +43,19 @@ html {
     background:black;
     position: absolute;
     top:50%;
+    transform-origin: 100%; 
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: ease;     
+  }
+
+  .second-hand {
+      background: rgb(10, 91, 138);
+      height: 3px;
+  }
+
+  .hour-hand {
+      height: 8px;
+      left: 45px;
+      width: 35%;
   }
